@@ -18,6 +18,11 @@
 // function for creating a manager (call this at the bottom of your init function )
     //inquirer prompt with the manager questions
     //in your .then- set up a variable for manager that is equal to a new instance in your managers class passing in the response you received from the users input
+
+    .then((answers) =>{
+        const manager = new Manager(answers.name , answers.officeNumber)
+        teamMember.push(manager)
+    })
         // push that variable to your team members array, push the id to the id array 
         // call your next function
 
