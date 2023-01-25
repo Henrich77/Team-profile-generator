@@ -1,4 +1,11 @@
 // require all of your classes 
+const Employee = require('./lib/Employee');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/intern');
+const Manager = require('./lib/Manager');
+const fs = require('fs')
+
+
 
 // require inquirer , path if needed, fs
 
