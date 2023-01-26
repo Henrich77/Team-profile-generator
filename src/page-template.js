@@ -2,39 +2,75 @@
 
 const Engineer = require("../lib/Engineer");
 
+
 const generateTeam = team => {
 
+    console.log(team)
+    team.map((teamMember, index) => {
+        console.log(teamMember.getRole())
+
+        if (teamMember.getRole() === 'Engineer') {
+
+            return `
+        
+            <div>
+                <h1> ${teamMember.getName()} </h1>
+            <div>    
+            `
+        }
+        else if (teamMember.getRole() === 'Manager') {
+
+            return `
+        
+            <div>
+                <h1> ${teamMember.getName()} </h1>
+            <div>    
+            `
+        }
+        else if (teamMember.getRole() === 'Intern') {
+
+            return `
+        
+            <div>
+                <h1> ${teamMember.getName()} </h1>
+            <div>    
+            `
+        }
+
+
+    })
+
     // create manager html 
-    const generateManager = manager => {
-        return `
+    // const generateManager = manager => {
+    //     return `
         
-        <div>
-            <h1> ${manager.getName()} </h1>
-        <div>    
-        `
-    };
+    //     <div>
+    //         <h1> ${manager.getName()} </h1>
+    //     <div>    
+    //     `
+    // };
     // create the html for the engineer
-    const generateEngineer = engineer => {
-        return `
+    // const generateEngineer = engineer => {
+    //     return `
         
-        <div>
-            <h1> ${engineer.getName()} </h1>
-        <div>    
-        `
+    //     <div>
+    //         <h1> ${engineer.getName()} </h1>
+    //     <div>    
+    //     `
 
-    };
+    // };
     // create the html for the intern
-    const generateIntern = intern => {
-        return `
+    // const generateIntern = intern => {
+    //     return `
         
-        <div>
-            <h1> ${intern.getName()} </h1>
-        <div>    
-        `
+    //     <div>
+    //         <h1> ${intern.getName()} </h1>
+    //     <div>    
+    //     `
 
-    };
+    // };
 
-    const hmtl = [];
+    // const hmtl = [];
 
     //push the team array that is passed to this function into the empty html array
     // get just the employees out of the html array that have a role of Manager 
@@ -58,6 +94,7 @@ const generateTeam = team => {
 // export function to generate the entire page 
 
 module.exports = team => {
+    console.log(team)
 
     return `
     <!DOCTYPE html>
@@ -69,7 +106,7 @@ module.exports = team => {
     <title>Document</title>
 </head>
 <body>
-    <div> ${generateTeam(team)}
+    <div> ${generateTeam(team)}</div>
 </body>
 </html> 
     `
