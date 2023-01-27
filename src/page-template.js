@@ -18,8 +18,9 @@ const generateTeam = team => {
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                      <div class="card-body">
-                        <h5 class="card-title">${teamMember.getName()}</h5>
-                        <p class="card-text">${teamMember.getGithub()}</p>
+                        <h1 class="card-title">${teamMember.getName()}</h1>
+                        <h2 class="card-text">${teamMember.getId()}</h2>
+                        <h2> ${teamMember.getGithub()}</h2>
                         <a href="#" class="btn btn-primary">${teamMember.getEmail()}</a>
                     </div>
                 </div>
@@ -33,9 +34,11 @@ const generateTeam = team => {
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">C</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h1 class="card-title"> ${teamMember.getName()}</h1>
+                    <h2 class="card-text"> ${teamMember.getId()}</h2>
+                    <h2> ${teamMember.getOffice()} </h2>
+                    <a href="#" class="btn btn-primary"> ${teamMember.getEmail()}</a>
+
                 </div>
             </div>
            
@@ -48,9 +51,10 @@ const generateTeam = team => {
             <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h1 class="card-title"> ${teamMember.getName()}</h1>
+                    <h2 class="card-text"> ${teamMember.getId()}</h2>
+                    <h2 class="card-text"> ${teamMember.getUniversity()}</h2>
+                    <a href="#" class="btn btn-primary"> ${teamMember.getEmail()}</a>
                 </div>
              </div>
             `
