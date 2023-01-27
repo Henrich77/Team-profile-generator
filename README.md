@@ -25,7 +25,7 @@ This project is used to generate team profiles for all team members.
 
 click the link below to watch a video on how the project works.
 
-********* https://drive.google.com/file/d/1aww-7qJRp9JvRYT-tbb5hFmerNfFfYRs/view ************
+[https://drive.google.com/file/d/1aww-7qJRp9JvRYT-tbb5hFmerNfFfYRs/view](url)
 
 
 
