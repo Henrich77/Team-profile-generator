@@ -20,6 +20,8 @@ const id = [];
 // function that wraps everything ( like an init function)
 function init() {
 
+    console.log(`/////////////////////////  Welcome to the team profile generator /////////////////////////`)
+
     inquirer.
         prompt([
             {
