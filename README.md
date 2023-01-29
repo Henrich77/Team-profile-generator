@@ -30,7 +30,7 @@ This project is used to generate team profiles for all team members.
 <img width="1512" alt="Screenshot 2023-01-28 at 7 12 05 PM" src="https://user-images.githubusercontent.com/119962472/215297055-64f25af6-b970-464a-81bd-99d8f745eb5d.png">
 
 
-click the link below to watch a video on how the project works.
+Copy and paste the link to watch a video on how the project works.
 
 [https://drive.google.com/file/d/1p_ZKSzBrRVSEGQFB6AGAsv7MmF-yLEOp/view](url)
 
