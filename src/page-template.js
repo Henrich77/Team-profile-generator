@@ -15,13 +15,14 @@ const generateTeam = team => {
 
             return `
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card container" style="width: 18rem;">
+                   
                      <div class="card-body">
-                        <h1 class="card-title">${teamMember.getName()}</h1>
-                        <h2 class="card-text">${teamMember.getId()}</h2>
-                        <h2> ${teamMember.getGithub()}</h2>
-                        <a href="#" class="btn btn-primary">${teamMember.getEmail()}</a>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOIJ8tZtNTts4N2QQal6N8A6ohwmNnPOw3xZxgTlMixRZBJrvMyw7hj3kLbSH7LgPsk8&usqp=CAU" class="card-img-top" alt="employee icon">
+                        <h2 class="card-title"> Name: ${teamMember.getName()}</h2>
+                        <h2 class="card-text"> ID:${teamMember.getId()}</h2>
+                        <h2> GitHub: ${teamMember.getGithub()}</h2>
+                        <a href="#" class="btn btn-primary button">${teamMember.getEmail()}</a>
                     </div>
                 </div>
         
@@ -31,12 +32,13 @@ const generateTeam = team => {
         else if (teamMember.getRole() === 'Manager') {
 
             return `
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card container" style="width: 18rem;">
+              
                 <div class="card-body">
-                    <h1 class="card-title"> ${teamMember.getName()}</h1>
-                    <h2 class="card-text"> ${teamMember.getId()}</h2>
-                    <h2> ${teamMember.getOffice()} </h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgcyALYUglaKvzSim26uCgtVSxEZ0ivAASQ&usqp=CAU" class="card-img-top" alt="Manager Icon">
+                    <h2 class="card-title">Name: ${teamMember.getName()}</h2>
+                    <h2 class="card-text">ID: ${teamMember.getId()}</h2>
+                    <h2>Office: ${teamMember.getOffice()} </h2>
                     <a href="#" class="btn btn-primary"> ${teamMember.getEmail()}</a>
 
                 </div>
@@ -48,12 +50,13 @@ const generateTeam = team => {
 
             return `
         
-            <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="card-title"> ${teamMember.getName()}</h1>
-                    <h2 class="card-text"> ${teamMember.getId()}</h2>
-                    <h2 class="card-text"> ${teamMember.getUniversity()}</h2>
+            <div class="card container" style="width: 18rem;">
+                    
+                <div class="card-body" sytle="width:10rem;">
+                <img src="https://i.pinimg.com/736x/23/20/53/232053bc430e9b4b8a43438797e6a25b.jpg" class="card-img-top" alt="Intern Icon">
+                    <h2 class="card-title"> Name:${teamMember.getName()}</h2>
+                    <h2 class="card-text">ID: ${teamMember.getId()}</h2>
+                    <h2 class="card-text">School: ${teamMember.getUniversity()}</h2>
                     <a href="#" class="btn btn-primary"> ${teamMember.getEmail()}</a>
                 </div>
              </div>
@@ -99,11 +102,12 @@ module.exports = team => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-    <h1>The guys</h1>
+    <h1> My Team </h1>
     </header>
 
     <main>${generateTeam(team)}</main>
@@ -115,7 +119,7 @@ module.exports = team => {
     
     
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html> 
     `

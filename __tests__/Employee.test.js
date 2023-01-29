@@ -1,8 +1,11 @@
 // require Employee
+const Employee = require('./lib/Employee')
 
 
 // write a test to see if you can instantiate an Employee instance
 test( 'can instantiate Employee instance', () =>{
+    const employee = new Employee()
+
 
     // variable for the new Employee
     // expect the type of that variable to be an object
